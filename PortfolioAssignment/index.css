@@ -1,0 +1,270 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.logo-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.moonstyle{
+    width:25px;
+    height:25px;
+}
+
+/* Home Section */
+.page-section {
+  padding: 4rem;
+  text-align: center;
+}
+
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 1;
+  padding: 2rem;
+}
+
+.hello {
+  background-image: linear-gradient(to right,#32F6F6,#A6A79F);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  border-bottom-left-radius: 0%;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #737373;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #BD3ECC;
+}
+
+.description{
+    font-size: 30px;
+    color:#000000;
+}
+
+.buttons button {
+  padding: 0.7rem 1.2rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cv-btn {
+  background-image: linear-gradient(to right, #DF580C,#FD993D);
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-btn {
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-icons {
+  margin-top: 2rem;
+}
+.social-icons a {
+  margin-right: 1rem;
+}
+.image-wrap {
+  width: 320px;
+  height: 320px;
+  background-color: yellow;
+  border-radius: 50%;
+  border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: visible; 
+  margin: auto;
+}
+
+.image-wrap img {
+  width: 110%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  border-radius: 50%;
+}
+
+
+/*About section*/
+#about-section {
+  position: relative;
+  padding: 6rem 1.5rem;
+  background-color: #fff;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  left:15%;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+.first-letter {
+  font-size: 3.2rem;
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.smiley {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.about-paragraph {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.social-icons {
+  margin-top: 2.5rem;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Blobs & Hand Image */
+.blob {
+  position: absolute;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.hand-image {
+ position: absolute;
+  top: 140px;
+  left: 5%;
+  width: 270px;
+  z-index: 1;
+}
+
+/*dark mode*/
+.moonstyle {
+  width: 24px;
+  height: 24px;
+  filter: invert(0%); /* Black moon in light mode */
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .description,
+body.dark-mode h1,
+body.dark-mode h2 {
+  color: #e0e0e0;
+}
+
+.body.dark-mode .about-section{
+  background-color: #000;
+}
+
+body.dark-mode .cv-btn {
+  background-image: linear-gradient(to right, #ff6600, #ff9933);
+}
+
+body.dark-mode .contact-btn {
+  background-color: #444;
+}
+
+body.dark-mode .image-wrap {
+  background-color: #333333;
+}
+
+body.dark-mode .theme-icon {
+  filter: invert(100%);
+}
+
+
